@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 360px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.login-form h5 {
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    color: #999;
+    font-size: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background: #fff;
+    padding: 0 5px;
+}
+
+.input-group input:focus {
+    border-color: #6200ea;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    font-size: 13px;
+    color: #6200ea;
+}
+
+.btn-apple {
+    background-color: #0182fc;
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* espacio entre el logo y el texto */
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial, Helvetica', 'Arial', 'sans-serif'; /* misma fuente que los inputs */
+    font-weight: 400; /* coincide con tu formulario */
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-apple:hover {
+    background-color: #3000db;
+}
+
+.inicio-registro {
+    margin-bottom: 10px;
+}
+
+/* Estilos de selects */
+.input-group-slc {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.input-group-slc select {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+    appearance: none;        /* quita la flecha nativa */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.input-group-slc select:focus {
+    border-color: #6200ea;
+}
+
+.input-group-slc label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    color: #999;
+    font-size: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background: #fff;
+    padding: 0 5px;
+}
+
+.input-group-slc select:focus + label,
+.input-group-slc select:valid + label {
+    top: -10px;
+    font-size: 13px;
+    color: #6200ea;
+}
+
+/* flechita personalizada */
+.input-group-slc::after {
+    content: "▼";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #6200ea;
+    pointer-events: none;
+}
+
+/* Contenedor flex para Semestre, Grupo y Especialidad */
+.input-group-row {
+    display: flex;
+    gap: 10px;         /* separación entre cada select */
+    flex-wrap: wrap;    /* baja a la siguiente línea en pantallas pequeñas */
+}
+
+/* Solo los selects dentro de la fila flex */
+.input-group-row .input-group-slc {
+    flex: 1;            /* cada select ocupa el mismo ancho */
+    min-width: 100px;   /* evita que se achiquen demasiado */
+}
+/* Botón estilo Apple */
+/* Botón estilo Apple con misma fuente que el formulario */
+
+

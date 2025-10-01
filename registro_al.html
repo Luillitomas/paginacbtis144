@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Material Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <form class="login-form" id="registroform">
+            <h2>Crear Cuenta</h2>
+
+            <div class="input-group">
+                <input type="text" id="nombre" required>
+                <label>Nombre completo</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" id="telefono" required>
+                <label>Telefono</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="nocontrol" required>
+                <label>Numero de Control</label>
+            </div>
+
+            <div class="input-group-row">
+                <div class="input-group-slc">
+                    <select id="semestre" name="semestre" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <label>Semestre</label>
+                </div>
+
+                <div class="input-group-slc">
+                    <select id="grupo" name="grupo" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                    </select>
+                    <label>Grupo</label>
+                </div>
+
+                <div class="input-group-slc">
+                    <select id="especialidad" name="especialidad" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="quimico">Químico laboratorista</option>
+                        <option value="construccion">Construcción</option>
+                        <option value="contabilidad">Contabilidad</option>
+                        <option value="mantenimiento">Soporte y mantenimiento</option>
+                        <option value="ofimatica">Ofimática</option>
+                    </select>
+                    <label>Especialidad</label>
+                </div>
+            </div>
+
+
+            <div class="input-group">
+                <input type="password" id="contraseña" required>
+                <label>Contraseña</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="confirmarcontraseña" required>
+                <label>Confirmar contraseña</label>
+            </div>
+
+            <button type="submit" class="btn-apple">Registrarse</button>
+
+            <h5 class="inicio-registro">¿Ya tienes una cuenta? <a href="index.html">Inicia sesion aqui</a></h5>
+            <h5>¿Eres docente? <a href="registro_dc.html">Registrate aqui</a></h5>
+
+        </form>
+        <script src="js/registro.js"></script>
+    </div>
+</body>
+
+</html>
